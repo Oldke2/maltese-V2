@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "maltesemod",
+  "version": "${version}",
+  "name": "Black Maltese Puppy",
+  "description": "Anade a Frida, una perrita Maltese negra que adora los huesos.",
+  "authors": ["Tu nombre"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.frida.maltese.MalteseMod"],
+    "client": ["com.frida.maltese.client.MalteseClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
