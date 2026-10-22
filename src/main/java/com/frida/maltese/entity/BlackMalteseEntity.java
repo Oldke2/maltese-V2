@@ -216,6 +216,11 @@ public class BlackMalteseEntity extends TameableEntity {
     public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
         return null; // sin crianza, para mantener el mod simple
     }
+/** Requerido por TameableEntity en 1.20.1 */
+    @Override
+    public net.minecraft.world.EntityView method_48926() {
+        return this.getWorld();
+    }
 
     @Override
     public boolean isBreedingItem(ItemStack stack) {
